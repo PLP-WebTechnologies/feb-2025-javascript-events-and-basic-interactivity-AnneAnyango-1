@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Interactive Playground!</h1>
+
+    <h2>1. Event Handling </h2>
+    <button id="clickMeButton">Click Me!</button>
+    <p id="clickMessage"></p>
+
+    <div id="hoverMe">Hover Over Me</div>
+    <p id="hoverMessage"></p>
+
+    <input type="text" id="keypressInput" placeholder="Type something here">
+    <p id="keypressMessage"></p>
+
+    <button id="doubleClickMeButton">Double Click Me!</button>
+    <p id="doubleClickMessage"></p>
+
+    <h2>2. Interactive Elements </h2>
+    <button id="changeTextButton">Change Text</button>
+    <p id="buttonText">Initial Text</p>
+
+    <div id="imageGallery">
+        <img id="galleryImage" src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Beach Image">
+        <img id="galleryImage" src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cars image">
+        <img id="galleryImage" src="https://images.pexels.com/photos/8957675/pexels-photo-8957675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Beach field">
+        <br>
+        <br>
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+    </div>
+
+
+    <div class="tabs">
+        <div class="tab-buttons">
+            <button class="tab-button active" data-tab="tab1">Tab 1</button>
+            <button class="tab-button" data-tab="tab2">Tab 2</button>
+            <button class="tab-button" data-tab="tab3">Tab 3</button>
+        </div>
+        <div class="tab-content active" id="tab1">Content for Tab 1</div>
+        <div class="tab-content" id="tab2">Content for Tab 2</div>
+        <div class="tab-content" id="tab3">Content for Tab 3</div>
+    </div>
+
+    <h2>3. Form Validation </h2>
+    <form id="myForm">
+        <div>
+            <label for="name">Name (Required):</label>
+            <input type="text" id="name" required>
+            <p class="error-message" id="nameError"></p>
+        </div>
+        <div>
+            <label for="email">Email (Required):</label>
+            <input type="email" id="email" required>
+            <p class="error-message" id="emailError"></p>
+        </div>
+        <div>
+            <label for="password">Password (Min 8 characters):</label>
+            <input type="password" id="password" required>
+            <p class="error-message" id="passwordError"></p>
+        </div>
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

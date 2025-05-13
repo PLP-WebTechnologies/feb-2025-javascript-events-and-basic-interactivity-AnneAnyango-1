@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#hoverMe {
+    background-color: lightblue;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid blue;
+    width: 200px;
+    text-align: center;
+}
+
+#hoverMe.hovered {
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+#imageGallery {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+
+#galleryImage {
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.tabs {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-buttons {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.tab-buttons button {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+}
+
+.tab-buttons button.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding: 15px;
+    display: none; /* Initially hide all content */
+}
+
+.tab-content.active {
+    display: block; /* Show the active tab's content */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#myForm div {
+    margin-bottom: 10px;
+}
+
+#myForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#myForm input[type="text"],
+#myForm input[type="email"],
+#myForm input[type="password"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#myForm button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#myForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
